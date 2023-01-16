@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" div="IE=edge">
+    <meta name="viewport" div="width=device-width, initial-scale=1.0">
+    <title>UzAeroSpace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="info">
+            <object data="./assets/icons/location.svg"></object>
+            <span class="info__text">Г. Ташкент, Мирзо - Улугбекский р-н, ул. Дурмон, 9</span>
+        </div>
+        <div class="info">
+            <object data="./assets/icons/envelope.svg"></object>
+            <span class="info__text">info@uzaerospace.uz</span>
+        </div>
+        <div class="info">
+            <object data="./assets/icons/mobile.svg"></object>
+            <span class="info__text">+ 998 (55) 502 50 23</span>
+            <span class="info__text">+ 998 (55) 502 50 23</span>
+        </div>
+    </div>
+    <nav>
+        <div class="logo">
+            <img width="194px" src="./assets/logo/uzaerospace.png" alt="UzAeroSpace">
+        </div>
+        <ul class="navigation">
+            <li>о компании</li>
+            <li>сферы применения</li>
+            <li>новости</li>
+            <li>контакты</li>
+            <li class="little">ru/en/uz</li>
+        </ul>
+    </nav>
+    <div class="intro">
+        <div class="slider">
+            <button class="btn-prev-img btn-slider-controller">
+                <object data="./assets/icons/prev.svg"></object>
+            </button>
+            
+            <div class="header">
+                <h2 class="title">Беспилотные летательные <br>аппараты</h2>
+                <button class="more">Подробно</button>
+            </div>
+
+            <div class="picture" aria-img-shown="0">
+                <img src="./assets/images/Phantom-air-drone.png" class="active">
+                <img src="./assets/images/Beach-air-drone.png">
+                <img src="./assets/images/Field-air-drone.png">
+            </div>
+            <button class="btn-next-img btn-slider-controller">
+                <object data="./assets/icons/next.svg"></object>
+            </button>
+            <div class="slider-shown">
+                <div class="shown-indicator active"></div>
+                <div class="shown-indicator"></div>
+                <div class="shown-indicator"></div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <h1 class="title">О компании</h1>
+        <div class="container">
+            <div class="container__image"><img src="./assets/images/Red-air-drone.png" alt="Red Air Drone"></div>
+            <p class="container__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </div>
+    <div id="experience">
+        <div class="years">
+            <div class="year">5<span class="desc">лет опыта</span></div>
+            <div class="year">16<span class="desc">лет опыта</span></div>
+            <div class="year">110<span class="desc">лет опыта</span></div>
+            <div class="year">3<span class="desc">лет опыта</span></div>
+        </div>
+    </div>
+    <div id="news">
+        <h1 class="title">Новости</h1>
+        <div class="newsletter">
+
+            <div class="news">
+                <div class="image-news">
+                    <img class="news__img" src="./assets/images/Flying-air-drone.png">
+                </div>
+                <div class="time">
+                    <object data="./assets/icons/time.svg"></object>
+                    <time>10.10.2021</time>
+                </div>
+                
+                <p class="news__desc">Беспилотные летательные аппараты Беспилотные летательные   аппараты</p>
+                <button class="btn-more">Подробно</button>
+            </div>
+            <div class="news">
+                <div class="image-news">
+                    <img class="news__img" src="./assets/images/Throwable-air-drone.png">
+                </div>
+                <div class="time">
+                    <object data="./assets/icons/time.svg"></object>
+                    <time>10.10.2021</time>
+                </div>
+                
+                <p class="news__desc">Беспилотные летательные аппараты Беспилотные летательные   аппараты</p>
+                <button class="btn-more">Подробно</button>
+            </div>
+            <div class="news">
+                <div class="image-news">
+                    <img class="news__img" src="./assets/images/Agro-air-drone.png">
+                </div>
+                <div class="time">
+                    <object data="./assets/icons/time.svg"></object>
+                    <time>10.10.2021</time>
+                </div>
+                
+                <p class="news__desc">Беспилотные летательные аппараты Беспилотные летательные   аппараты</p>
+                <button class="btn-more">Подробно</button>
+            </div>
+        </div>
+            <button class="btn-all-news">Все новости <svg width="19" height="19" viewBox="0 0 19 19" fill="inherit" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 0C14.748 0 19 4.25202 19 9.5C19 14.748 14.748 19 9.5 19C4.25202 19 0 14.748 0 9.5C0 4.25202 4.25202 0 9.5 0ZM8.39294 5.50081L11.2851 8.27419H4.29032C3.78085 8.27419 3.37097 8.68407 3.37097 9.19355V9.80645C3.37097 10.3159 3.78085 10.7258 4.29032 10.7258H11.2851L8.39294 13.4992C8.02137 13.8554 8.01371 14.4492 8.37762 14.8131L8.79899 15.2306C9.15907 15.5907 9.74133 15.5907 10.0976 15.2306L15.1808 10.1512C15.5409 9.79113 15.5409 9.20887 15.1808 8.85262L10.0976 3.76552C9.7375 3.40544 9.15524 3.40544 8.79899 3.76552L8.37762 4.18306C8.01371 4.55081 8.02137 5.14456 8.39294 5.50081Z" fill="inherit"/></svg></button>
+        </div>
+        
+    <div id="partners">
+        <h1 class="title">Партнеры</h1>
+        <div class="partners">
+            <div class="partner"><img src="./assets/logo/it-park.png"></div>
+            <div class="partner"><img src="./assets/logo/wingtra.png"></div>
+            <div class="partner"><img src="./assets/logo/geoscan.png"></div>
+            <div class="partner"><img src="./assets/logo/dji.png"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="contact-info">
+            <div class="info">
+                <object data="./assets/icons/location.svg"></object>
+                <span class="info__text">Г. Ташкент, Мирзо - Улугбекский р-н,<br> ул. Дурмон, 9</span>
+            </div>
+            <div class="info">
+                <object data="./assets/icons/mobile.svg"></object>
+                <span class="info__text">+ 998 (55) 502 50 23</span>
+            </div>
+            <div class="info">
+                <object data="./assets/icons/envelope.svg"></object>
+                <span class="info__text">info@uzaerospace.uz</span>
+            </div>
+        </div>
+        <div class="logo"><img width="248px" src="./assets/logo/uzaerospace.png" alt="Uz Aero Space"></div>
+        <div class="sign">
+            <ul class="social-media">
+                <li><a href="#" class="social-page"><object data="./assets/icons/facebook-logo.svg"></object></a></li>
+                <li><a href="#" class="social-page"><object data="./assets/icons/instagram-logo.svg"></object></a></li>
+                <li><a href="#" class="social-page"><object data="./assets/icons/telegram-logo.svg"></object></a></li>
+            </ul>
+            <p class="all-rights">© Все права защищены 2021</p>
+            <p class="developed-by">Разработка сайта - <a href="https://abduganiev.uz/">Abduganiev Technology</a> <a href="https://t.me/SlimShadyII">(Abdulaziz)</a></p>
+        </div>
+    </footer>
+</body>
+</html>
