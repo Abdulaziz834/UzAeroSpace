@@ -16,7 +16,7 @@
     --fs-btn-more: 18px;
     --fs-footer: 18px;
     --fs-description: 20px;
-    --fs-navigation: 22px;
+    --fs-navigation: clamp(1rem, 1.5vw, 1.5rem);
     --fs-exp-description: 30px;
     --fs-heading: 50px;
     --fs-experience: 80px;
@@ -119,6 +119,7 @@ ul.navigation {
     letter-spacing: 1px;
     color: var(--clr-primary);
     height: 40px;
+    padding: 0;
 }
 
 ul.navigation > li:not(.little) {
@@ -257,6 +258,7 @@ button.more:hover {
     align-items: center;
 }
 
+
 .container .container__text {
     font-size: var(--fs-description);
     text-align: justify;
@@ -264,6 +266,27 @@ button.more:hover {
     width: 35vw;
     min-width: 534px;
 }
+
+.container__image > img {
+    width: 100%;
+}
+
+@media (max-width: 850px) {
+    .container__image {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1225px) {
+    .container__image {
+        width: 35%;
+    }
+}
+
+
 
 .years {
     height: 304px;
@@ -464,4 +487,8 @@ footer .logo > img {
     color: inherit;
     text-decoration: none;
     font-weight: bold;
+}
+
+.sign p {
+    width: max-content;
 }
