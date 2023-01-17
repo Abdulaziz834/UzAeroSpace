@@ -251,13 +251,18 @@ button.more:hover {
 
 #about .container {
     display: flex;
-    gap: .5rem;
+    gap: 1.5rem;
     margin-top: 3.25rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .container .container__text {
     font-size: var(--fs-description);
     text-align: justify;
+    max-width: 1000px;
+    width: 35vw;
+    min-width: 534px;
 }
 
 .years {
@@ -303,6 +308,7 @@ button.more:hover {
 
 .news {
     box-shadow: 0px 5px 20px rgb(0 0 0 / 13%);
+    max-width: 600px;
 }
 
 
@@ -312,7 +318,7 @@ button.more:hover {
 
 .news__img {
     width: 100%;
-    max-width: 390px;
+    max-width: 600px;
     aspect-ratio: 1.427 / 1;
     object-fit: cover;
     transition: all 300ms ease-in-out;
@@ -380,7 +386,7 @@ button.more:hover {
     margin-top: 4rem;
     display: flex;
     gap: 2rem;
-    
+    justify-content: center;
 }
 
 .partner {
