@@ -47,3 +47,30 @@ const observer = new IntersectionObserver(entries => {
 })
 
 observer.observe(navBar)
+
+
+function counter(elem, finalNum, wholeTime) {
+    if (!finalNum) {
+      finalNum = parseInt(elem.innerText);
+    }
+    let counts = setInterval(updated, wholeTime/finalNum);
+    let upto = 0;
+    elem.innerHTML = 0;
+    function updated(){
+        if (finalNum > 1000) {
+            elem.innerHTML = upto + 5;
+            upto += 5;
+        }
+        else {
+            elem.innerHTML = ++upto;
+        }
+        if(upto > finalNum) {
+            elem.innerHTML = upto + (finalNum - upto)
+            clearInterval(counts);
+        }
+    }
+}
+
+document.querySelectorAll("span.year__num").forEach(year => {
+    counter(year, undefined, 3000);
+})

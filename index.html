@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" div="IE=edge">
     <meta name="viewport" div="width=device-width, initial-scale=1.0">
     <title>UzAeroSpace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/icons/uzaero-icon.png" type="image/png">
     <script src="./script.js" defer></script>
@@ -30,11 +33,12 @@
             <img width="194px" src="./assets/logo/uzaerospace.png" alt="UzAeroSpace">
         </div>
         <ul class="navigation">
-            <li>о компании</li>
-            <li>сферы применения</li>
-            <li>новости</li>
-            <li>контакты</li>
-            <li class="little">ru/en/uz</li>
+            <li>Главная</li>
+            <li>О компании</li>
+            <li>Сферы применения</li>
+            <li>Услуги</li>
+            <li>Новости</li>
+            <li>Контакты</li>
         </ul>
     </nav>
     <div class="intro">
@@ -63,21 +67,41 @@
             </div>
         </div>
     </div>
-    <div id="about">
-        <h1 class="title">О компании</h1>
+    <div id="usability">
+        <h1 class="title">Сферы применения</h1>
         <div class="container">
-            <div class="container__image"><img src="./assets/images/Red-air-drone.png" alt="Red Air Drone"></div>
-            <p class="container__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+            <div class="use-box">
+                <img src="./assets/images/Selxoz-air-drone.png">
+                <h3 class="use-title">Сельское хозяйство →</h3>
+            </div>
+            <div class="use-box">
+                <img src="./assets/images/Road-air-drone.png">
+                <h3 class="use-title">Дорожное хозяйство →</h3>
+            </div>
+            <div class="use-box">
+                <img src="./assets/images/Lep-air-drone.png">
+                <h3 class="use-title">Электросетевой комплекс →</h3>
+            </div>
+            <div class="use-box">
+                <img src="./assets/images/Neftgaz-air-drone.png">
+                <h3 class="use-title">Нефтегазовая отрасль →</h3>
+            </div>
+            <div class="use-box">
+                <img src="./assets/images/Selxoz-air-drone.png">
+                <h3 class="use-title">Горнодобывающий комплекс →</h3>
+            </div>
+            <div class="use-box">
+                <img src="./assets/images/Mount-air-drone.png">
+                <h3 class="use-title">Геодезия и картография →</h3>
+            </div>
         </div>
     </div>
     <div id="experience">
         <div class="years">
-            <div class="year">5<span class="desc">лет опыта</span></div>
-            <div class="year">16<span class="desc">лет опыта</span></div>
-            <div class="year">110<span class="desc">лет опыта</span></div>
-            <div class="year">3<span class="desc">лет опыта</span></div>
+            <div class="year"><span class="year__num">4</span>Закрытых проектов</div>
+            <div class="year"><span class="year__num">49</span>Летных часов</div>
+            <div class="year"><span class="year__num">1834</span>Аэрофотосъёмка<br>территорий (га)</div>
+            <div class="year"><span class="year__num">10</span>Партнеров</div>
         </div>
     </div>
     <div id="news">
@@ -86,39 +110,36 @@
 
             <div class="news">
                 <div class="image-news">
-                    <img class="news__img" src="./assets/images/Flying-air-drone.png">
+                    <img class="news__img" src="./assets/images/Space-air-drone.png">
                 </div>
                 <div class="time">
                     <object data="./assets/icons/time.svg"></object>
                     <time>10.10.2021</time>
                 </div>
                 
-                <p class="news__desc">Беспилотные летательные аппараты Беспилотные летательные   аппараты</p>
-                <button class="btn-more">Подробно</button>
+                <p class="news__desc">Первую киностудию в космосе планируют построить к 2024 году</p>
             </div>
             <div class="news">
                 <div class="image-news">
-                    <img class="news__img" src="./assets/images/Throwable-air-drone.png">
+                    <img class="news__img" src="./assets/images/Helper-air-drone.png">
                 </div>
                 <div class="time">
                     <object data="./assets/icons/time.svg"></object>
                     <time>10.10.2021</time>
                 </div>
                 
-                <p class="news__desc">Беспилотные летательные аппараты Беспилотные летательные   аппараты</p>
-                <button class="btn-more">Подробно</button>
+                <p class="news__desc">Тонущего в море человека спасли с помощью дрона</p>
             </div>
             <div class="news">
                 <div class="image-news">
-                    <img class="news__img" src="./assets/images/Agro-air-drone.png">
+                    <img class="news__img" src="./assets/images/Forest-air.drone.png">
                 </div>
                 <div class="time">
                     <object data="./assets/icons/time.svg"></object>
                     <time>10.10.2021</time>
                 </div>
                 
-                <p class="news__desc">Беспилотные летательные аппараты Беспилотные летательные   аппараты</p>
-                <button class="btn-more">Подробно</button>
+                <p class="news__desc">В США выпустили первый дрон с искусственным интеллектом и подключением к 5G</p>
             </div>
         </div>
             <button class="btn-all-news">Все новости <svg width="19" height="19" viewBox="0 0 19 19" fill="inherit" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 0C14.748 0 19 4.25202 19 9.5C19 14.748 14.748 19 9.5 19C4.25202 19 0 14.748 0 9.5C0 4.25202 4.25202 0 9.5 0ZM8.39294 5.50081L11.2851 8.27419H4.29032C3.78085 8.27419 3.37097 8.68407 3.37097 9.19355V9.80645C3.37097 10.3159 3.78085 10.7258 4.29032 10.7258H11.2851L8.39294 13.4992C8.02137 13.8554 8.01371 14.4492 8.37762 14.8131L8.79899 15.2306C9.15907 15.5907 9.74133 15.5907 10.0976 15.2306L15.1808 10.1512C15.5409 9.79113 15.5409 9.20887 15.1808 8.85262L10.0976 3.76552C9.7375 3.40544 9.15524 3.40544 8.79899 3.76552L8.37762 4.18306C8.01371 4.55081 8.02137 5.14456 8.39294 5.50081Z" fill="inherit"/></svg></button>
