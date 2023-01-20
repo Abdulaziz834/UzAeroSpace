@@ -24,6 +24,7 @@
     --fs-experience: 60px;
     
     --fw-normal: 400;
+    --fw-light: 300;
 }
 
 * {
@@ -92,6 +93,7 @@ nav {
     padding: 1rem;
     top: -1px;
     z-index: 2;
+    box-shadow: 0px 3px 3px 0px #c6c7c8;
 }
 
 nav .logo > img {
@@ -106,11 +108,14 @@ ul.navigation {
     display: flex;
     list-style: none;
     font-size: var(--fs-navigation);
+    font-weight: var(--fw-light);
+    letter-spacing: 1px;
     gap: 1.5em;
     align-items: center;
     color: var(--clr-primary);
     height: 2em;
     padding: 0;
+    user-select: none;
 }
 
 ul.navigation > li {
@@ -128,7 +133,7 @@ ul.navigation > li:hover {
 }
 
 .menu {
-    width: 200px;
+    width: 10.5em;
 }
 
 
@@ -171,10 +176,6 @@ ul.navigation > li:hover {
     background-size: 100% 2px;
 }
 
-
-.intro {
-    margin-top: 2rem;
-}
 
 .slider {
     position: relative;
@@ -452,16 +453,27 @@ button.more:hover {
     margin-top: 0;
 }
 
+.horizontal-scrollbar {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+}
+
 .partners {
     margin-top: 4rem;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    max-width: 1116px;
+    margin-inline: auto;
+    grid-auto-columns: 22.85%;
     gap: 2rem;
-    justify-content: center;
+    
 }
 
 .partner {
-    width: 300px;
-    height: 135px;
+    scroll-snap-align: end;
+    aspect-ratio: 2.48 / 1;
+    max-width: 255px;
     box-shadow: 2px 2px 12px 1px rgb(133 129 133 / 18%);
     padding: 2rem;
     display: flex;
@@ -470,6 +482,7 @@ button.more:hover {
     border-radius: 15px;
     transition: translate 300ms ease-in-out;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .partner:has(:hover) {
@@ -478,10 +491,6 @@ button.more:hover {
 
 .partner > img {
     width: 100%;
-}
-
-.partner:last-child {
-    padding: 0;
 }
 
 .partner:last-child > img {
@@ -529,8 +538,8 @@ footer .logo > img {
     gap: 1.75rem;
     justify-items: end;
 }
-
 .sign a {
+
     color: inherit;
     text-decoration: none;
     font-weight: bold;

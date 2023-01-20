@@ -39,15 +39,6 @@ sliderControllers.forEach(controller => {
     }
 })
 
-var navBar = document.querySelector(".navbar"),
-    nav = document.querySelector("nav");
-
-const observer = new IntersectionObserver(entries => {
-    nav.classList.toggle("stick", !entries[0].isIntersecting)
-})
-
-observer.observe(navBar)
-
 
 function counter(elem, finalNum, wholeTime) {
     if (!finalNum) {
@@ -71,6 +62,22 @@ function counter(elem, finalNum, wholeTime) {
     }
 }
 
-document.querySelectorAll("span.year__num").forEach(year => {
-    counter(year, undefined, 3000);
-})
+
+var navBar = document.querySelector(".navbar"),
+    nav = document.querySelector("nav"),
+    exp = document.querySelector("#experience");
+
+const observer = new IntersectionObserver(entries => {
+    nav.classList.toggle("stick", !entries[0].isIntersecting)
+}),
+    counterObserver = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+            document.querySelectorAll("span.year__num").forEach(year => {
+                counter(year, undefined, 3000);
+            })
+            counterObserver.unobserve(exp);
+        }
+    });
+
+observer.observe(navBar)
+counterObserver.observe(exp)
