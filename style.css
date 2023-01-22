@@ -283,6 +283,8 @@ button.more:hover {
     display: grid;
     gap: 1.5rem;
     margin-top: 3.25rem;
+    max-width: 1280px;
+    margin-inline: auto;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -457,17 +459,23 @@ button.more:hover {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
+    max-width: 1116px;
+    margin-inline: auto;
+}
+
+.horizontal-scrollbar::-webkit-scrollbar {
+    display: none;
 }
 
 .partners {
     margin-top: 4rem;
     display: grid;
     grid-auto-flow: column;
-    max-width: 1116px;
-    margin-inline: auto;
+
+    padding-block: 1rem;
     grid-auto-columns: 22.85%;
     gap: 2rem;
-    
+    transition: translate 300ms ease;
 }
 
 .partner {

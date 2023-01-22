@@ -49,8 +49,8 @@ function counter(elem, finalNum, wholeTime) {
     elem.innerHTML = 0;
     function updated(){
         if (finalNum > 1000) {
-            elem.innerHTML = upto + 5;
-            upto += 5;
+            elem.innerHTML = upto + 3;
+            upto += 3;
         }
         else {
             elem.innerHTML = ++upto;
@@ -81,3 +81,23 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(navBar)
 counterObserver.observe(exp)
+
+function returnSlider() {
+    setTimeout(() => {
+        partnersContainer.style.transition = "translate 300ms ease";
+    }, 1000);
+}
+
+var partners = document.querySelectorAll(".partners > *"),
+    partnersContainer = document.querySelector(".partners"),
+    partnersCount = partners.length - 3;
+    partnersImgShown = 0;
+    partnersInterval = setInterval(() => {
+        partnersImgShown++;
+        if (partnersImgShown == partnersCount) {
+            partnersImgShown = 0;
+            partnersContainer.style.transition = "none";
+            returnSlider()
+        }
+        partnersContainer.style.translate = `calc(-287px * ${partnersImgShown}) 0`;
+    }, 5000);
