@@ -91,13 +91,21 @@ function returnSlider() {
 var partners = document.querySelectorAll(".partners > *"),
     partnersContainer = document.querySelector(".partners"),
     partnersCount = partners.length - 3;
-    partnersImgShown = 0;
+    partnersImgShown = 0,
     partnersInterval = setInterval(() => {
         partnersImgShown++;
-        if (partnersImgShown == partnersCount) {
+        console.log(partnersImgShown);
+        if (partnersImgShown >= partnersCount) {
             partnersImgShown = 0;
             partnersContainer.style.transition = "none";
             returnSlider()
+            document.querySelector(".horizontal-scrollbar").scrollLeft = 0;
         }
         partnersContainer.style.translate = `calc(-287px * ${partnersImgShown}) 0`;
     }, 5000);
+
+var newObserver = new IntersectionObserver((entries) => {
+    if (entries[0].isIntersecting) {partnersImgShown = partnersCount-1;}
+})
+
+newObserver.observe(partners[partners.length-1])
