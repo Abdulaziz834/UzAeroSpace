@@ -491,6 +491,7 @@ button.more:hover {
     transition: translate 300ms ease-in-out;
     cursor: pointer;
     overflow: hidden;
+    user-select: none;
 }
 
 .partner:has(:hover) {
