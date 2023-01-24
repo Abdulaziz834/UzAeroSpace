@@ -101,7 +101,7 @@ var partners = document.querySelectorAll(".partners > *"),
             returnSlider()
             document.querySelector(".horizontal-scrollbar").scrollLeft = 0;
         }
-        partnersContainer.style.translate = `calc(-287px * ${partnersImgShown}) 0`;
+        partnersContainer.style.translate = `calc(-25.75% * ${partnersImgShown}) 0`;
     }, 5000);
 
 var newObserver = new IntersectionObserver((entries) => {
